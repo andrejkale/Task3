@@ -38,6 +38,7 @@ public abstract  class Goods implements Comparable<Goods> {
                 ", name='" + name + '\'' +
                 '}';
     }
+    @Override
     public int compareTo(Goods o){
         if(this.cost < o.getCost())
             return -1;
@@ -46,7 +47,5 @@ public abstract  class Goods implements Comparable<Goods> {
         else return 1;
     }
 
-    static void avgCost() {
 
-    }
 }
